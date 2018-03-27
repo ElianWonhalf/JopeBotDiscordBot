@@ -1,0 +1,9 @@
+# IDE files
+.idea
+*.iml
+
+# Generated files
+node_modules
+
+# Sensitive files
+config.js

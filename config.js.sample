@@ -1,0 +1,29 @@
+const config = {
+    integration: {
+        token: '',
+        debug: true,
+        triggerEmojis: [':smoosh:428003127996973056'],
+        userIdToMention: ''
+    },
+    production: {
+        token: '',
+        debug: false,
+        triggerEmojis: [':jopeHey:385522657036337166', ':GOD:385484682244128768'],
+        userIdToMention: ''
+    }
+};
+
+// You should not need to edit anything under that comment
+
+let integration = false;
+
+if (typeof process.argv[2] !== 'undefined') {
+    if (process.argv[2] === '--integration') {
+        integration = true;
+    } else {
+        console.warn('Unknown argument passed');
+        console.warn(process.argv.slice(2));
+    }
+}
+
+module.exports = integration ? config.integration : config.production;
