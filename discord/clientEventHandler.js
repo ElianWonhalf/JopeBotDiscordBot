@@ -23,7 +23,7 @@ global.client.on("message", msg => {
         }
     } else if (msg.mentions.users.has(global.client.user.id)) {
         const snarkyRemarks = [
-            author + ', what do you want from me? Oh wait, I wasn\'t listening. Oh, did you notice? I\'m still not listening!',
+            author + ', what do you want from me? Oh wait, I wasn’t listening. Oh, did you notice? I’m still not listening!',
             'Hey everyone, did you notice how ' + author + ' is trying to catch my attention? Me neither.',
             'Could you please not, ' + author + '?',
             'What are you trying to accomplish by mentioning me, ' + author + '?',
@@ -32,6 +32,23 @@ global.client.on("message", msg => {
             author + ' ' + author,
             '...',
             '..?',
+            'I like you, ' + author + '. You remind me of me when I was young and stupid.',
+            'I don’t know what your problem is, ' + author + ', but I’ll bet it’s hard to pronounce.',
+            'I see you’ve set aside this special time to humiliate yourself in public, ' + author + '.',
+            'You are validating my inherent mistrust of humans, ' + author + '.',
+            'I’m already visualizing the duct tape over your mouth, ' + author + '.',
+            'I will always cherish the initial misconceptions I had about you, ' + author + '.',
+            'No, my powers can only be used for pinging Jope, ' + author + '.',
+            'Don’t bother me, ' + author + ', I’m living happily ever after.',
+            'Sarcasm is just one more service I offer, ' + author + '.',
+            'Do they ever shut up on your planet, ' + author + '?',
+            'Wait…I’m trying to imagine you with a personality, ' + author + '.',
+            'We’ve been friends for a very long time. How about we call it quits, ' + author + '?',
+            'Remember when I asked you to mention me, ' + author + '? Me neither.',
+            'If you’re waiting for me to care, I hope you brought something to eat, ‘cause it’s gonna be a really long time, ' + author + '.',
+            'Everyone’s entitled to act stupid once in awhile, but you really abuse the privilege, ' + author + '.',
+            'Please, keep talking, ' + author + '. I only yawn when I’m super fascinated.',
+            'If I threw a stick, you’d leave, right, ' + author + '?',
         ];
 
         msg.channel.send(snarkyRemarks[Math.floor(Math.random() * snarkyRemarks.length)]);
