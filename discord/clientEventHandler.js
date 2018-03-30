@@ -49,6 +49,7 @@ global.client.on("message", msg => {
             'Everyone’s entitled to act stupid once in awhile, but you really abuse the privilege, ' + author + '.',
             'Please, keep talking, ' + author + '. I only yawn when I’m super fascinated.',
             'If I threw a stick, you’d leave, right, ' + author + '?',
+            'On a scale of one to ten, how old are you, ' + author + '?',
         ];
 
         msg.channel.send(snarkyRemarks[Math.floor(Math.random() * snarkyRemarks.length)]);
